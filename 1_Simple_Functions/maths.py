@@ -11,6 +11,16 @@ def func_add(a, b):
     
     
 def func_subtract(a, b):
+    """
+        :param a:
+        :param b:
+        :return a - b:
+
+        >>> func_subtract(10, 7)
+        3
+        >>> func_subtract(5, 3)
+        2
+        """
     return a - b
 
     
@@ -20,4 +30,13 @@ def func_multiply(a, b):
     
 def func_divide(a, b):
     return a / b
-    
+
+
+def _test():
+    import doctest
+    doctest.testmod()
+
+
+if __name__ == '__main__':
+    'Can run with -v option if you want to confirm tests were run'
+    _test()
